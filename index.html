@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Karba Financial Consultant - Life Insurance, Children Education Plan, Family Protection, and Annuity Plans in Nigeria">
-  <meta name="keywords" content="Karba Financial Consultant, Life Insurance, Children Education, Family Protection, Annuity, Nigeria">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Karba Financial Consultant - Life Insurance, Children Education, Family Protection, and Annuity Plans in Nigeria." />
+  <meta name="keywords" content="Karba Financial Consultant, Insurance, Children Education, Family Protection, Annuity Plans Nigeria" />
   <title>Karba Financial Consultant</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #ffffff;
-      color: #001f3f;
+      color: #000000;
     }
     header {
       background-color: #001f3f;
@@ -20,13 +20,13 @@
       color: gold;
     }
     nav {
-      background-color: #002244;
-      padding: 0.5rem;
+      background-color: #08221a;
       text-align: center;
+      padding: 0.5rem;
     }
     nav a {
-      margin: 0 1rem;
       color: gold;
+      margin: 0 1rem;
       text-decoration: none;
       font-weight: bold;
     }
@@ -55,79 +55,114 @@
       border-radius: 5px;
       text-decoration: none;
     }
-    section, footer {
+    section.services, section.about, section.contact, section.testimonials {
       padding: 2rem 1rem;
       max-width: 1000px;
       margin: auto;
     }
-    h2 {
+    .services h2, .about h2, .contact h2, .testimonials h2 {
+      text-align: center;
       color: #001f3f;
     }
     .service-box {
-      background-color: #f2f2f2;
       margin: 1rem 0;
+      background-color: #f1f1f1;
       padding: 1rem;
-      border-radius: 5px;
+      border-left: 4px solid #001f3f;
+    }
+    .service-box h3 {
+      margin: 0;
+    }
+    .testimonials {
+      background-color: #f4f4f4;
+      text-align: center;
+    }
+    .testimonial-box {
+      margin: 1rem auto;
+      max-width: 600px;
+      padding: 1rem;
+      border-left: 4px solid #001f3f;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .testimonial-box p {
+      font-style: italic;
+      margin-bottom: 0.5rem;
+    }
+    .testimonial-box strong {
+      color: #001f3f;
     }
     footer {
       background-color: #001f3f;
       color: gold;
       text-align: center;
       font-size: 0.9rem;
+      padding: 1rem;
     }
   </style>
 </head>
 <body>
-
   <header>
     <h1>Karba Financial Consultant</h1>
     <p>Live Confidently. Invest Wisely. Leave a Legacy.</p>
   </header>
 
   <nav>
-    <a href="#home">Home</a>
-    <a href="#education">Education Plan</a>
-    <a href="#annuity">Annuity</a>
-    <a href="#protection">Family Protection</a>
-    <a href="#blog">Blog</a>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Free Services</a>
+    <a href="#testimonials">Testimonials</a>
     <a href="#contact">Contact</a>
   </nav>
 
-  <section id="home" class="hero">
+  <section class="hero">
     <h1>We Help You Secure Your Future</h1>
     <p>Explore trusted life insurance and financial solutions tailored for Nigerian families and businesses.</p>
     <a class="cta-button" href="https://wa.me/2349162631205">Book Free Consultation</a>
   </section>
 
-  <section id="education">
-    <h2>Children Education Plan</h2>
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>Karba Financial Consultant is a registered intermediary based in Lagos, Nigeria, offering expert insurance advice and connecting clients with the right plans in Life Insurance, Children Education Protection, Annuity, and Family Protection. We stand for integrity, transparency, and legacy building.</p>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Our Free Services</h2>
     <div class="service-box">
-      <p>Secure your child's future with a smart savings plan that ensures continuous learning—even when life happens. It comes with partial withdrawal options and guaranteed benefits.</p>
+      <h3>Children Education Protection Plans</h3>
+      <p>Secure your child’s education future with plans that ensure continued learning even in your absence.</p>
+    </div>
+    <div class="service-box">
+      <h3>Family Protection Life Insurance</h3>
+      <p>Protect your loved ones with reliable coverage and peace of mind.</p>
+    </div>
+    <div class="service-box">
+      <h3>Annuity Retirement Plans</h3>
+      <p>Receive guaranteed payouts during retirement. Rest easy knowing your future income is our mission.</p>
+    </div>
+    <div class="service-box">
+      <h3>Free Consultations & Claims Assistance</h3>
+      <p>We assist in claims processing and advise you at no cost – your peace of mind is our priority.</p>
     </div>
   </section>
 
-  <section id="annuity">
-    <h2>Annuity Retirement Plans</h2>
-    <div class="service-box">
-      <p>Receive guaranteed payouts during retirement. Rest easy knowing your future income is secure for life.</p>
+  <section id="testimonials" class="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial-box">
+      <p>“Karba helped me secure my child’s future. I’m grateful for their guidance and support!”</p>
+      <strong>– Mrs. Abiola, Lagos</strong>
+    </div>
+    <div class="testimonial-box">
+      <p>“Their annuity plan gave me peace of mind after retirement. Very professional team.”</p>
+      <strong>– Mr. Okonkwo, Abuja</strong>
+    </div>
+    <div class="testimonial-box">
+      <p>“Excellent service and real commitment to family protection. I highly recommend Karba.”</p>
+      <strong>– Faith I., Ibadan</strong>
     </div>
   </section>
 
-  <section id="protection">
-    <h2>Family Protection Life Insurance</h2>
-    <div class="service-box">
-      <p>Protect your loved ones with reliable life insurance coverage that pays a lump sum when they need it most.</p>
-    </div>
-  </section>
-
-  <section id="blog">
-    <h2>Blog</h2>
-    <div class="service-box">
-      <p>Financial education, success stories, and tips to help you live confidently. (Coming Soon)</p>
-    </div>
-  </section>
-
-  <section id="contact">
+  <section id="contact" class="contact">
     <h2>Contact Us</h2>
     <p>Email: <a href="mailto:info@karbafinancialconsultant.com">info@karbafinancialconsultant.com</a></p>
     <p>Phone: 09162631205</p>
@@ -135,8 +170,7 @@
   </section>
 
   <footer>
-    <p>&copy; 2025 Karba Financial Consultant. All rights reserved.</p>
+    <p>© 2025 Karba Financial Consultant. All rights reserved.</p>
   </footer>
-
 </body>
 </html>
