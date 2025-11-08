@@ -224,7 +224,13 @@
   .prop-grid.sm{ grid-template-columns:1fr; gap:8px; }
   .prop-card.sm{ padding:10px }
 }
-    </style>
+    </style
+      <style>
+  .btn{display:inline-block; padding:8px 12px; border:1px solid var(--line);
+       border-radius:8px; text-decoration:none; color:var(--white); }
+  .btn:hover{filter:brightness(1.06)}
+  .btn.primary{background:var(--gold); color:#0b2340; border-color:var(--gold);}
+</style>
   <style>
       .cols { display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:20px; }
       .col-box { border:1px solid #345; padding:14px; }
@@ -235,6 +241,37 @@
       .cta-link { padding:6px 10px; border:1px solid #f0c040; text-decoration:none; color:#f0c040; white-space:nowrap; }
       @media (max-width:600px){ .prop-list li{ flex-direction:column; align-items:flex-start; } }
     </style>
+  <!-- ===== Insurance Plan Types (with modal photos + WhatsApp) ===== -->
+<style>
+  /* spacing so it doesn’t touch the edges */
+  .info-wrap{margin:0 10px}
+  .info-section{margin:28px 0}
+  .info-title{font-size:22px;font-weight:800;margin:0 0 12px}
+  .info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+
+  .info-card{border:1px solid var(--line);background:rgba(255,255,255,.06);border-radius:12px;padding:14px}
+  .info-card h4{margin:0 0 8px;font-size:18px}
+  .info-card ul{margin:0 0 10px 18px;padding:0}
+  .info-card li{margin:4px 0}
+
+  /* inline button (same look as property “See Photos”) */
+  .btn-inline{display:inline-block;padding:6px 10px;border-radius:8px;border:1px solid var(--gold);color:var(--gold);text-decoration:none}
+  .btn-inline:hover{filter:brightness(1.08)}
+
+  /* modal (reuse of your property pattern; add if missing) */
+  .modal-toggle{display:none}
+  .photo-modal{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;align-items:center;justify-content:center;z-index:1000;padding:16px}
+  .modal-toggle:checked + .photo-modal{display:flex}
+  .photo-content{background:#fff;color:#111;max-width:520px;width:100%;border-radius:12px;padding:16px}
+  .photo-content h3{margin:0 0 10px}
+  .photo-content img{width:100%;height:auto;border-radius:8px;margin:6px 0}
+  .whatsapp-btn{display:inline-block;margin-top:10px;padding:8px 12px;border-radius:8px;background:#25D366;color:#fff;text-decoration:none}
+  .close-modal{display:inline-block;margin-left:10px;color:#555;cursor:pointer}
+  @media (max-width:600px){
+    .info-title{font-size:20px}
+    .info-card{padding:12px}
+  }
+</style>
 </head>      
 <body>
 <header class="header">
@@ -268,6 +305,7 @@
           <span class="pill">NAICOM</span>
           <span class="pill">LASRERA</span>
           <span class="pill">CIIN</span>
+          <span class="pill">SMEDAN</span>
         </div>
       </div>
       <div class="card">
@@ -305,10 +343,10 @@
             <li><b>Annuity Plans</b> & Retirement</li>
             <li>Motor & General (via partner insurers)</li>
           </ul>
-          <div class="cta">
-            <a class="btn" href="#contact">Request Official Quote</a>
-            <a href="#ins-plans" class="btn">See Plan Types</a>
-          </div>
+          <div class="cta" style="display:flex; gap:12px; flex-wrap:wrap;">
+          <a class="btn" href="#quote">Request Official Quote</a>
+          <a class="btn primary" href="#ins-plans">See Plan Types</a>
+        </div>
           <p style="font-size:12px;color:var(--muted);margin-top:8px">*Calculators differ by company. KARBA fetches accurate quotes directly from your chosen insurer.</p>
         </div>
         <div class="card" id="realestate">
@@ -846,45 +884,12 @@ KARBA Financial Consultant Ltd; also known simply as <strong>KARBA</strong> prov
   </div>
 </section>
 
-  
-<!-- ===== Insurance Plan Types (with modal photos + WhatsApp) ===== -->
-<style>
-  /* spacing so it doesn’t touch the edges */
-  .info-wrap{margin:0 10px}
-  .info-section{margin:28px 0}
-  .info-title{font-size:22px;font-weight:800;margin:0 0 12px}
-  .info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
-
-  .info-card{border:1px solid var(--line);background:rgba(255,255,255,.06);border-radius:12px;padding:14px}
-  .info-card h4{margin:0 0 8px;font-size:18px}
-  .info-card ul{margin:0 0 10px 18px;padding:0}
-  .info-card li{margin:4px 0}
-
-  /* inline button (same look as property “See Photos”) */
-  .btn-inline{display:inline-block;padding:6px 10px;border-radius:8px;border:1px solid var(--gold);color:var(--gold);text-decoration:none}
-  .btn-inline:hover{filter:brightness(1.08)}
-
-  /* modal (reuse of your property pattern; add if missing) */
-  .modal-toggle{display:none}
-  .photo-modal{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;align-items:center;justify-content:center;z-index:1000;padding:16px}
-  .modal-toggle:checked + .photo-modal{display:flex}
-  .photo-content{background:#fff;color:#111;max-width:520px;width:100%;border-radius:12px;padding:16px}
-  .photo-content h3{margin:0 0 10px}
-  .photo-content img{width:100%;height:auto;border-radius:8px;margin:6px 0}
-  .whatsapp-btn{display:inline-block;margin-top:10px;padding:8px 12px;border-radius:8px;background:#25D366;color:#fff;text-decoration:none}
-  .close-modal{display:inline-block;margin-left:10px;color:#555;cursor:pointer}
-  @media (max-width:600px){
-    .info-title{font-size:20px}
-    .info-card{padding:12px}
-  }
-</style>
-
 <div class="info-wrap">
 <section id="ins-plans" class="info-section">
   <h3 class="info-title">Insurance Plan Types</h3>
 
   <div class="info-grid">
-
+    
     <!-- Retirees & Immediate Annuity -->
     <div class="info-card">
       <h4>Retirees & Immediate Annuity</h4>
@@ -1009,15 +1014,13 @@ KARBA Financial Consultant Ltd; also known simply as <strong>KARBA</strong> prov
         <a class="whatsapp-btn" target="_blank" rel="noopener"
            href="https://wa.me/2349162631205?text=Hello%20KARBA!%20I%27m%20interested%20in%20Motor%20Vehicle%20Insurance%20(Comprehensive%20or%20Third-Party).">Message on WhatsApp</a>
         <label for="ins-motor" class="close-modal">× Close</label>
-      </div></div>
-    </div>
+          </div></div>
+        </div>
+      </div>
+    </section>
 
-  </div>
-</section>
-</div>
-
-<!-- breathing space before footer -->
-<div style="height:24px"></div>
+      <!-- breathing space before footer -->
+      <div style="height:24px"></div>
   
   <section class="section" id="contact">
     <div class="container row">
