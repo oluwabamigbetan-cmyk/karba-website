@@ -306,6 +306,49 @@
 .meta-line{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
 .btn-inline{padding:4px 10px;border-radius:6px;border:1px solid var(--gold);color:var(--gold);text-decoration:none}
 .btn-inline:hover{filter:brightness(1.1)}
+
+      /* ---- Section (big) cards that house many small property cards ---- */
+.state-card{
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.05);
+  border-radius:16px;
+  padding:14px;
+  margin:14px 0;
+}
+.state-title{
+  margin:0 0 10px;
+  font-size:18px;
+  font-weight:800;
+}
+
+/* compact grid of small cards */
+.prop-grid.sm{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+  gap:10px;
+}
+
+/* small property card */
+.prop-card.sm{
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.06);
+  border-radius:10px;
+  padding:10px;
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
+.prop-card.sm .prop-title{ font-size:1rem; font-weight:700; line-height:1.25; }
+.prop-card.sm .meta-line{ display:flex; align-items:center; gap:6px; flex-wrap:wrap; font-size:.95rem; }
+.btn-inline{ padding:3px 8px; border-radius:6px; border:1px solid var(--gold); color:var(--gold); text-decoration:none; }
+.btn-inline:hover{ filter:brightness(1.1); }
+
+/* phone: keep it dense */
+@media (max-width:600px){
+  .state-card{ padding:12px }
+  .prop-grid.sm{ grid-template-columns:1fr; gap:8px; }
+  .prop-card.sm{ padding:10px }
+}
     </style>
 
     <!-- ===== PROMO 1 ===== -->
@@ -1058,9 +1101,367 @@ KARBA Financial Consultant Ltd; also known simply as <strong>KARBA</strong> prov
 </div>
   
   
-  
+  <div class="state-card">
+  <h3 class="state-title">Investments (Land Banking)</h3>
+  <div class="prop-grid sm">
+
+    <!-- INV #1 -->
+    <div class="prop-card sm">
+      <div class="prop-title">A1 Tim Govt Scheme (Epe) — Land Banking</div>
+      <div class="meta-line">
+        <span>From ₦1.2m/unit</span>
+        <label for="inv-lag-1" class="btn-inline">See Photos</label>
+        <span class="muted">• Yield: 12–18% p.a.</span>
+      </div>
+      <input id="inv-lag-1" class="modal-toggle" type="checkbox">
+      <div class="photo-modal"><div class="photo-content">
+        <h3>A1 Tim Govt Scheme (Epe)</h3>
+        <img src="assets/lagos-inv1-1.jpg" alt="">
+        <img src="assets/lagos-inv1-2.jpg" alt="">
+        <p>From ₦1.2m/unit • Yield: 12–18% p.a.</p>
+        <a class="whatsapp-btn" target="_blank" rel="noopener"
+           href="https://wa.me/2349162631205?text=Hello%20KARBA!%20Interested%20in%20A1%20Tim%20Govt%20Scheme%20(Epe)%20land%20banking.">💬 Message on WhatsApp</a>
+        <label for="inv-lag-1" class="close-modal">× Close</label>
+      </div></div>
+    </div>
+
+    <!-- INV #2 -->
+    <div class="prop-card sm">
+      <div class="prop-title">KLFG Land Banking (Ibeju)</div>
+      <div class="meta-line">
+        <span>From ₦950k/unit</span>
+        <label for="inv-lag-2" class="btn-inline">See Photos</label>
+        <span class="muted">• Yield: 10–15% p.a.</span>
+      </div>
+      <input id="inv-lag-2" class="modal-toggle" type="checkbox">
+      <div class="photo-modal"><div class="photo-content">
+        <h3>KLFG Land Banking (Ibeju)</h3>
+        <img src="assets/lagos-inv2-1.jpg" alt="">
+        <img src="assets/lagos-inv2-2.jpg" alt="">
+        <p>From ₦950k/unit • Yield: 10–15% p.a.</p>
+        <a class="whatsapp-btn" target="_blank" rel="noopener"
+           href="https://wa.me/2349162631205?text=Hello%20KARBA!%20Interested%20in%20KLFG%20Land%20Banking%20(Ibeju).">💬 Message on WhatsApp</a>
+        <label for="inv-lag-2" class="close-modal">× Close</label>
+      </div></div>
+    </div>
+
+    <!-- INV #3 -->
+    <div class="prop-card sm">
+      <div class="prop-title">Western Green (Ibeju) — Land Banking</div>
+      <div class="meta-line">
+        <span>From ₦750k/unit</span>
+        <label for="inv-lag-3" class="btn-inline">See Photos</label>
+        <span class="muted">• Yield: 9–12% p.a.</span>
+      </div>
+      <input id="inv-lag-3" class="modal-toggle" type="checkbox">
+      <div class="photo-modal"><div class="photo-content">
+        <h3>Western Green (Ibeju)</h3>
+        <img src="assets/lagos-inv3-1.jpg" alt="">
+        <img src="assets/lagos-inv3-2.jpg" alt="">
+        <p>From ₦750k/unit • Yield: 9–12% p.a.</p>
+        <a class="whatsapp-btn" target="_blank" rel="noopener"
+           href="https://wa.me/2349162631205?text=Hello%20KARBA!%20Interested%20in%20Western%20Green%20(Ibeju)%20land%20banking.">💬 Message on WhatsApp</a>
+        <label for="inv-lag-3" class="close-modal">× Close</label>
+      </div></div>
+    </div>
+
+  </div>
 </div>
-      
+
+  <div class="state-card">
+  <h3 class="state-title">Lagos — Houses & Apartments</h3>
+  <div class="prop-grid sm">
+
+    <!-- House #1 -->
+    <div class="prop-card sm">
+      <div class="prop-title">3-Bed Duplex, Lekki Phase 1</div>
+      <div class="meta-line">
+        <span>₦180m</span>
+        <label for="lag-sale-1" class="btn-inline">See Photos</label>
+        <span class="muted">• Title: Governor’s Consent</span>
+      </div>
+      <input id="lag-sale-1" class="modal-toggle" type="checkbox">
+      <div class="photo-modal"><div class="photo-content">
+        <h3>3-Bed Duplex, Lekki Phase 1</h3>
+        <img src="assets/lagos-sale1-1.jpg" alt="">
+        <img src="assets/lagos-sale1-2.jpg" alt="">
+        <p>₦180m • Governor’s Consent</p>
+        <a class="whatsapp-btn" target="_blank" rel="noopener"
+           href="https://wa.me/2349162631205?text=Hello%20KARBA!%203-Bed%20Duplex%2C%20Lekki%20Phase%201%20(₦180m).">💬 Message on WhatsApp</a>
+        <label for="lag-sale-1" class="close-modal">× Close</label>
+      </div></div>
+    </div>
+
+    <!-- House #2 -->
+    <div class="prop-card sm">
+      <div class="prop-title">4-Bed Terrace, Ajah</div>
+      <div class="meta-line">
+        <span>₦95m</span>
+        <label for="lag-sale-2" class="btn-inline">See Photos</label>
+        <span class="muted">• Title: Deed & Survey</span>
+      </div>
+      <input id="lag-sale-2" class="modal-toggle" type="checkbox">
+      <div class="photo-modal"><div class="photo-content">
+        <h3>4-Bed Terrace, Ajah</h3>
+        <img src="assets/lagos-sale2-1.jpg" alt="">
+        <img src="assets/lagos-sale2-2.jpg" alt="">
+        <p>₦95m • Deed & Survey</p>
+        <a class="whatsapp-btn" target="_blank" rel="noopener"
+           href="https://wa.me/2349162631205?text=Hello%20KARBA!%204-Bed%20Terrace%2C%20Ajah%20(₦95m).">💬 Message on WhatsApp</a>
+        <label for="lag-sale-2" class="close-modal">× Close</label>
+      </div></div>
+    </div>
+
+    <!-- House #3 -->
+    <div class="prop-card sm">
+      <div class="prop-title">2-Bed Apartment, Yaba</div>
+      <div class="meta-line">
+        <span>₦110m</span>
+        <label for="lag-sale-3" class="btn-inline">See Photos</label>
+        <span class="muted">• Title: C of O</span>
+      </div>
+      <input id="lag-sale-3" class="modal-toggle" type="checkbox">
+      <div class="photo-modal"><div class="photo-content">
+        <h3>2-Bed Apartment, Yaba</h3>
+        <img src="assets/lagos-sale3-1.jpg" alt="">
+        <img src="assets/lagos-sale3-2.jpg" alt="">
+        <p>₦110m • C of O</p>
+        <a class="whatsapp-btn" target="_blank" rel="noopener"
+           href="https://wa.me/2349162631205?text=Hello%20KARBA!%202-Bed%20Apartment%2C%20Yaba%20(₦110m).">💬 Message on WhatsApp</a>
+        <label for="lag-sale-3" class="close-modal">× Close</label>
+      </div></div>
+    </div>
+
+  </div>
+</div>
+
+  <div class="state-card">
+  <h3 class="state-title">Lagos — Lands</h3>
+  <div class="prop-grid sm">
+
+    <!-- Land #1 -->
+    <div class="prop-card sm">
+      <div class="prop-title">P2F, Gbogan, Odomoweu → Ibeju-Lekki</div>
+      <div class="meta-line">
+        <span>₦16m</span>
+        <label for="lag-land-1" class="btn-inline">See Photos</label>
+        <span class="muted">• Title: C of O</span>
+      </div>
+      <input id="lag-land-1" class="modal-toggle" type="checkbox">
+      <div class="photo-modal"><div class="photo-content">
+        <h3>P2F, Gbogan, Odomoweu → Ibeju-Lekki</h3>
+        <img src="assets/lagos-land1-1.jpg" alt="">
+        <img src="assets/lagos-land1-2.jpg" alt="">
+        <p>₦16m • C of O</p>
+        <a class="whatsapp-btn" target="_blank" rel="noopener"
+           href="https://wa.me/2349162631205?text=Hello%20KARBA!%20P2F%20Gbogan%20→%20Ibeju-Lekki%20(₦16m%2C%20C%20of%20O).">💬 Message on WhatsApp</a>
+        <label for="lag-land-1" class="close-modal">× Close</label>
+      </div></div>
+    </div>
+
+    <!-- Land #2 -->
+    <div class="prop-card sm">
+      <div class="prop-title">KLFG 600sqm, Igbodu, Epe</div>
+      <div class="meta-line">
+        <span>₦12m</span>
+        <label for="lag-land-2" class="btn-inline">See Photos</label>
+        <span class="muted">• Title: Survey</span>
+      </div>
+      <input id="lag-land-2" class="modal-toggle" type="checkbox">
+      <div class="photo-modal"><div class="photo-content">
+        <h3>KLFG 600sqm, Igbodu, Epe</h3>
+        <img src="assets/lagos-land2-1.jpg" alt="">
+        <img src="assets/lagos-land2-2.jpg" alt="">
+        <p>₦12m • Survey</p>
+        <a class="whatsapp-btn" target="_blank" rel="noopener"
+           href="https://wa.me/2349162631205?text=Hello%20KARBA!%20KLFG%20600sqm%2C%20Igbodu%2C%20Epe%20(₦12m%2C%20Survey).">💬 Message on WhatsApp</a>
+        <label for="lag-land-2" class="close-modal">× Close</label>
+      </div></div>
+    </div>
+
+    <!-- Land #3 -->
+    <div class="prop-card sm">
+      <div class="prop-title">IFCC 300sqm, Abijo-GRA</div>
+      <div class="meta-line">
+        <span>₦40m</span>
+        <label for="lag-land-3" class="btn-inline">See Photos</label>
+        <span class="muted">• Title: Governor’s Consent</span>
+      </div>
+      <input id="lag-land-3" class="modal-toggle" type="checkbox">
+      <div class="photo-modal"><div class="photo-content">
+        <h3>IFCC 300sqm, Abijo-GRA</h3>
+        <img src="assets/lagos-land3-1.jpg" alt="">
+        <img src="assets/lagos-land3-2.jpg" alt="">
+        <p>₦40m • Governor’s Consent</p>
+        <a class="whatsapp-btn" target="_blank" rel="noopener"
+           href="https://wa.me/2349162631205?text=Hello%20KARBA!%20IFCC%20300sqm%20Abijo-GRA%20(₦40m%2C%20Gov%27s%20Consent).">💬 Message on WhatsApp</a>
+        <label for="lag-land-3" class="close-modal">× Close</label>
+      </div></div>
+    </div>
+
+    <!-- Duplicate more cards up to 10+ -->
+  </div>
+</div>
+
+  <div class="state-card">
+  <h3 class="state-title">Rivers — Lands</h3>
+  <div class="prop-grid sm">
+
+    <div class="prop-card sm">
+      <div class="prop-title">450sqm, Eleme — Port Harcourt</div>
+      <div class="meta-line">
+        <span>₦14m</span>
+        <label for="riv-land-1" class="btn-inline">See Photos</label>
+        <span class="muted">• Title: Deed</span>
+      </div>
+      <input id="riv-land-1" class="modal-toggle" type="checkbox">
+      <div class="photo-modal"><div class="photo-content">
+        <h3>450sqm, Eleme — Port Harcourt</h3>
+        <img src="assets/riv-land1-1.jpg" alt="">
+        <img src="assets/riv-land1-2.jpg" alt="">
+        <p>₦14m • Deed</p>
+        <a class="whatsapp-btn" target="_blank" rel="noopener"
+           href="https://wa.me/2349162631205?text=Hello%20KARBA!%20450sqm%20Eleme%2C%20PH%20(₦14m%2C%20Deed).">💬 Message on WhatsApp</a>
+        <label for="riv-land-1" class="close-modal">× Close</label>
+      </div></div>
+    </div>
+
+    <div class="prop-card sm">
+      <div class="prop-title">500sqm, Obio/Akpor — Port Harcourt</div>
+      <div class="meta-line">
+        <span>₦16m</span>
+        <label for="riv-land-2" class="btn-inline">See Photos</label>
+        <span class="muted">• Title: Survey</span>
+      </div>
+      <input id="riv-land-2" class="modal-toggle" type="checkbox">
+      <div class="photo-modal"><div class="photo-content">
+        <h3>500sqm, Obio/Akpor — Port Harcourt</h3>
+        <img src="assets/riv-land2-1.jpg" alt="">
+        <img src="assets/riv-land2-2.jpg" alt="">
+        <p>₦16m • Survey</p>
+        <a class="whatsapp-btn" target="_blank" rel="noopener"
+           href="https://wa.me/2349162631205?text=Hello%20KARBA!%20500sqm%20Obio%2FAkpor%2C%20PH%20(₦16m%2C%20Survey).">💬 Message on WhatsApp</a>
+        <label for="riv-land-2" class="close-modal">× Close</label>
+      </div></div>
+    </div>
+
+  </div>
+</div>
+
+  <div class="state-card">
+  <h3 class="state-title">Imo — Lands</h3>
+  <div class="prop-grid sm">
+
+    <div class="prop-card sm">
+      <div class="prop-title">600sqm, New Owerri</div>
+      <div class="meta-line">
+        <span>₦8m</span>
+        <label for="imo-land-1" class="btn-inline">See Photos</label>
+        <span class="muted">• Title: Survey & Deed</span>
+      </div>
+      <input id="imo-land-1" class="modal-toggle" type="checkbox">
+      <div class="photo-modal"><div class="photo-content">
+        <h3>600sqm, New Owerri</h3>
+        <img src="assets/imo-land1-1.jpg" alt="">
+        <img src="assets/imo-land1-2.jpg" alt="">
+        <p>₦8m • Survey & Deed</p>
+        <a class="whatsapp-btn" target="_blank" rel="noopener"
+           href="https://wa.me/2349162631205?text=Hello%20KARBA!%20600sqm%20New%20Owerri%20(₦8m%2C%20Survey%20%26%20Deed).">💬 Message on WhatsApp</a>
+        <label for="imo-land-1" class="close-modal">× Close</label>
+      </div></div>
+    </div>
+
+    <div class="prop-card sm">
+      <div class="prop-title">450sqm, World Bank Layout</div>
+      <div class="meta-line">
+        <span>₦6.5m</span>
+        <label for="imo-land-2" class="btn-inline">See Photos</label>
+        <span class="muted">• Title: Survey</span>
+      </div>
+      <input id="imo-land-2" class="modal-toggle" type="checkbox">
+      <div class="photo-modal"><div class="photo-content">
+        <h3>450sqm, World Bank Layout</h3>
+        <img src="assets/imo-land2-1.jpg" alt="">
+        <img src="assets/imo-land2-2.jpg" alt="">
+        <p>₦6.5m • Survey</p>
+        <a class="whatsapp-btn" target="_blank" rel="noopener"
+           href="https://wa.me/2349162631205?text=Hello%20KARBA!%20450sqm%20World%20Bank%20Layout%20(₦6.5m%2C%20Survey).">💬 Message on WhatsApp</a>
+        <label for="imo-land-2" class="close-modal">× Close</label>
+      </div></div>
+    </div>
+
+  </div>
+</div>
+
+  <div class="state-card">
+  <h3 class="state-title">Anambra — Lands</h3>
+  <div class="prop-grid sm">
+
+    <div class="prop-card sm">
+      <div class="prop-title">600sqm, Awka — Ifite</div>
+      <div class="meta-line">
+        <span>₦7.5m</span>
+        <label for="ana-land-1" class="btn-inline">See Photos</label>
+        <span class="muted">• Title: Survey</span>
+      </div>
+      <input id="ana-land-1" class="modal-toggle" type="checkbox">
+      <div class="photo-modal"><div class="photo-content">
+        <h3>600sqm, Awka — Ifite</h3>
+        <img src="assets/anambra-land1-1.jpg" alt="">
+        <img src="assets/anambra-land1-2.jpg" alt="">
+        <p>₦7.5m • Survey</p>
+        <a class="whatsapp-btn" target="_blank" rel="noopener"
+           href="https://wa.me/2349162631205?text=Hello%20KARBA!%20600sqm%20Awka%20Ifite%20(₦7.5m%2C%20Survey).">💬 Message on WhatsApp</a>
+        <label for="ana-land-1" class="close-modal">× Close</label>
+      </div></div>
+    </div>
+
+    <div class="prop-card sm">
+      <div class="prop-title">500sqm, Onitsha — 3-3</div>
+      <div class="meta-line">
+        <span>₦9m</span>
+        <label for="ana-land-2" class="btn-inline">See Photos</label>
+        <span class="muted">• Title: Deed</span>
+      </div>
+      <input id="ana-land-2" class="modal-toggle" type="checkbox">
+      <div class="photo-modal"><div class="photo-content">
+        <h3>500sqm, Onitsha — 3-3</h3>
+        <img src="assets/anambra-land2-1.jpg" alt="">
+        <img src="assets/anambra-land2-2.jpg" alt="">
+        <p>₦9m • Deed</p>
+        <a class="whatsapp-btn" target="_blank" rel="noopener"
+           href="https://wa.me/2349162631205?text=Hello%20KARBA!%20500sqm%20Onitsha%203-3%20(₦9m%2C%20Deed).">💬 Message on WhatsApp</a>
+        <label for="ana-land-2" class="close-modal">× Close</label>
+      </div></div>
+    </div>
+
+    <div class="prop-card sm">
+      <div class="prop-title">300sqm, Nnewi — Okpuno</div>
+      <div class="meta-line">
+        <span>₦4.8m</span>
+        <label for="ana-land-3" class="btn-inline">See Photos</label>
+        <span class="muted">• Title: Survey & Deed</span>
+      </div>
+      <input id="ana-land-3" class="modal-toggle" type="checkbox">
+      <div class="photo-modal"><div class="photo-content">
+        <h3>300sqm, Nnewi — Okpuno</h3>
+        <img src="assets/anambra-land3-1.jpg" alt="">
+        <img src="assets/anambra-land3-2.jpg" alt="">
+        <p>₦4.8m • Survey & Deed</p>
+        <a class="whatsapp-btn" target="_blank" rel="noopener"
+           href="https://wa.me/2349162631205?text=Hello%20KARBA!%20300sqm%20Nnewi%20Okpuno%20(₦4.8m%2C%20Survey%20%26%20Deed).">💬 Message on WhatsApp</a>
+        <label for="ana-land-3" class="close-modal">× Close</label>
+      </div></div>
+    </div>
+
+  </div>
+</div>
+
+  
+
+
+
+  
   <section class="section" id="contact">
     <div class="container row">
       <div>
