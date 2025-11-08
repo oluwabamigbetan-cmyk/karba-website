@@ -103,6 +103,128 @@
   .close-modal{display:inline-block;margin-top:8px;background:#e5e5e5;color:#000;text-decoration:none;padding:6px 12px;border-radius:4px;cursor:pointer}
   .cta-link{padding:6px 10px;border:1px solid #f0c040;color:#f0c040;text-decoration:none;border-radius:4px;white-space:nowrap}
 </style>
+   <style>
+      .promo-box {
+        border: 1px solid #345;
+        padding: 16px;
+        margin: 12px 0;
+        border-left: 4px solid #f0c040;
+        background: rgba(255,255,255,0.03);
+      }
+      .promo-box h3 {
+        margin: 0 0 8px 0;
+        color: #f0c040;
+      }
+      .promo-box p {
+        margin: 0 0 10px 0;
+        opacity: .9;
+      }
+      .promo-links a {
+        display: inline-block;
+        background: #f0c040;
+        color: #000;
+        font-weight: 500;
+        text-decoration: none;
+        padding: 5px 12px;
+        border-radius: 4px;
+        transition: 0.3s;
+      }
+      .promo-links a:hover {
+        background: #d9aa2b;
+      }
+
+      /* === Property cards like Promo === */
+.prop-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:12px;
+  margin-top:8px;
+}
+.prop-card{
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.05);
+  border-radius:12px;
+  padding:14px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+.prop-card .prop-title{
+  font-weight:700;
+  line-height:1.25;
+}
+.prop-card .prop-meta{
+  opacity:.9;
+  font-size:.95rem;
+}
+.actions{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+}
+
+/* promo-like buttons */
+.btn{
+  display:inline-block; padding:8px 12px; border-radius:8px;
+  text-decoration:none; border:1px solid var(--line); color:#fff;
+}
+.btn-outline{ border-color:#f0c040; color:#f0c040; }
+.btn-outline:hover{ filter:brightness(1.1); }
+.btn-wa{ background:#25D366; color:#fff; border:none; }
+.btn-wa:hover{ filter:brightness(1.05); }
+
+/* make your old list neutral (we'll use the new grid) */
+.prop-list{ list-style:none; padding:0; margin:0; }
+.prop-list > li{ margin:0; padding:0; border:none; background:transparent; }
+
+      /* inline meta row: price + See Photos + Title */
+.meta-line{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.btn-inline{padding:4px 10px;border-radius:6px;border:1px solid var(--gold);color:var(--gold);text-decoration:none}
+.btn-inline:hover{filter:brightness(1.1)}
+
+      /* ---- Section (big) cards that house many small property cards ---- */
+.state-card{
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.05);
+  border-radius:16px;
+  padding:14px;
+  margin:14px 0;
+}
+.state-title{
+  margin:0 0 10px;
+  font-size:18px;
+  font-weight:800;
+}
+
+/* compact grid of small cards */
+.prop-grid.sm{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+  gap:10px;
+}
+
+/* small property card */
+.prop-card.sm{
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.06);
+  border-radius:10px;
+  padding:10px;
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
+.prop-card.sm .prop-title{ font-size:1rem; font-weight:700; line-height:1.25; }
+.prop-card.sm .meta-line{ display:flex; align-items:center; gap:6px; flex-wrap:wrap; font-size:.95rem; }
+.btn-inline{ padding:3px 8px; border-radius:6px; border:1px solid var(--gold); color:var(--gold); text-decoration:none; }
+.btn-inline:hover{ filter:brightness(1.1); }
+
+/* phone: keep it dense */
+@media (max-width:600px){
+  .state-card{ padding:12px }
+  .prop-grid.sm{ grid-template-columns:1fr; gap:8px; }
+  .prop-card.sm{ padding:10px }
+}
+    </style>
 </head>      
 <body>
 <header class="header">
@@ -227,130 +349,6 @@
   <div class="container">
     <hr style="border: 0; border-top: 1px solid #345; margin: 40px 0 25px 0;">
     <h2>Promos & Special Announcements</h2>
-
-    <style>
-      .promo-box {
-        border: 1px solid #345;
-        padding: 16px;
-        margin: 12px 0;
-        border-left: 4px solid #f0c040;
-        background: rgba(255,255,255,0.03);
-      }
-      .promo-box h3 {
-        margin: 0 0 8px 0;
-        color: #f0c040;
-      }
-      .promo-box p {
-        margin: 0 0 10px 0;
-        opacity: .9;
-      }
-      .promo-links a {
-        display: inline-block;
-        background: #f0c040;
-        color: #000;
-        font-weight: 500;
-        text-decoration: none;
-        padding: 5px 12px;
-        border-radius: 4px;
-        transition: 0.3s;
-      }
-      .promo-links a:hover {
-        background: #d9aa2b;
-      }
-
-      /* === Property cards like Promo === */
-.prop-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:12px;
-  margin-top:8px;
-}
-.prop-card{
-  border:1px solid var(--line);
-  background:rgba(255,255,255,.05);
-  border-radius:12px;
-  padding:14px;
-  display:flex;
-  flex-direction:column;
-  gap:10px;
-}
-.prop-card .prop-title{
-  font-weight:700;
-  line-height:1.25;
-}
-.prop-card .prop-meta{
-  opacity:.9;
-  font-size:.95rem;
-}
-.actions{
-  display:flex;
-  gap:8px;
-  flex-wrap:wrap;
-}
-
-/* promo-like buttons */
-.btn{
-  display:inline-block; padding:8px 12px; border-radius:8px;
-  text-decoration:none; border:1px solid var(--line); color:#fff;
-}
-.btn-outline{ border-color:#f0c040; color:#f0c040; }
-.btn-outline:hover{ filter:brightness(1.1); }
-.btn-wa{ background:#25D366; color:#fff; border:none; }
-.btn-wa:hover{ filter:brightness(1.05); }
-
-/* make your old list neutral (we'll use the new grid) */
-.prop-list{ list-style:none; padding:0; margin:0; }
-.prop-list > li{ margin:0; padding:0; border:none; background:transparent; }
-
-      /* inline meta row: price + See Photos + Title */
-.meta-line{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
-.btn-inline{padding:4px 10px;border-radius:6px;border:1px solid var(--gold);color:var(--gold);text-decoration:none}
-.btn-inline:hover{filter:brightness(1.1)}
-
-      /* ---- Section (big) cards that house many small property cards ---- */
-.state-card{
-  border:1px solid var(--line);
-  background:rgba(255,255,255,.05);
-  border-radius:16px;
-  padding:14px;
-  margin:14px 0;
-}
-.state-title{
-  margin:0 0 10px;
-  font-size:18px;
-  font-weight:800;
-}
-
-/* compact grid of small cards */
-.prop-grid.sm{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
-  gap:10px;
-}
-
-/* small property card */
-.prop-card.sm{
-  border:1px solid var(--line);
-  background:rgba(255,255,255,.06);
-  border-radius:10px;
-  padding:10px;
-  display:flex;
-  flex-direction:column;
-  gap:6px;
-}
-.prop-card.sm .prop-title{ font-size:1rem; font-weight:700; line-height:1.25; }
-.prop-card.sm .meta-line{ display:flex; align-items:center; gap:6px; flex-wrap:wrap; font-size:.95rem; }
-.btn-inline{ padding:3px 8px; border-radius:6px; border:1px solid var(--gold); color:var(--gold); text-decoration:none; }
-.btn-inline:hover{ filter:brightness(1.1); }
-
-/* phone: keep it dense */
-@media (max-width:600px){
-  .state-card{ padding:12px }
-  .prop-grid.sm{ grid-template-columns:1fr; gap:8px; }
-  .prop-card.sm{ padding:10px }
-}
-    </style>
-
     <!-- ===== PROMO 1 ===== -->
     <div class="promo-box">
       <h3>🎉 HOT DISTRESS SALES: TEV 13 PLOTS FENCED with C of O (Eleko Lekki Expressway)</h3>
@@ -832,61 +830,6 @@ KARBA Financial Consultant Ltd; also known simply as <strong>KARBA</strong> prov
 </section>
       
 <h3 class="col-title">Lands in Lagos</h3>
-<div class="prop-grid">
-
-  <!-- Card 1 -->
-  <div class="prop-card">
-    <div class="prop-title">P2F, Gbogan, Odomoweu → Ibeju-Lekki</div>
-    <div class="prop-meta">₦16m • Title: C of O</div>
-
-    <div class="actions">
-      <!-- open modal -->
-      <label for="lag-land1" class="btn btn-outline">See Photos</label>
-      <!-- WhatsApp -->
-      <a class="btn btn-wa" target="_blank" rel="noopener"
-         href="https://wa.me/2349162631205?text=Hello%20KARBA!%20I%27m%20interested%20in%20P2F%20Gbogan%20%2F%20Odomoweu%20towards%20Ibeju-Lekki%20(₦16m%2C%20C%20of%20O).">
-         Message on WhatsApp
-      </a>
-    </div>
-
-    <!-- your existing modal (unchanged IDs) -->
-    <input id="lag-land1" class="modal-toggle" type="checkbox">
-    <div class="photo-modal"><div class="photo-content">
-      <h3>P2F, Gbogan, Odomoweu → Ibeju-Lekki</h3>
-      <img src="assets/lagos-land1-1.jpg" alt="">
-      <img src="assets/lagos-land1-2.jpg" alt="">
-      <p>Price: ₦16m • Title: C of O</p>
-      <a class="whatsapp-btn" target="_blank" rel="noopener"
-         href="https://wa.me/2349162631205?text=Hello%20KARBA!%20I%27m%20interested%20in%20P2F%20Gbogan%20%2F%20Odomoweu%20towards%20Ibeju-Lekki%20(₦16m%2C%20C%20of%20O).">💬 Message on WhatsApp</a>
-      <label for="lag-land1" class="close-modal">× Close</label>
-    </div></div>
-  </div>
-
-  <!-- Card 2 -->
-  <div class="prop-card">
-    <div class="prop-title">KLFG 600sqm, Igbodu, Epe</div>
-    <div class="prop-meta">₦12m • Title: Survey</div>
-
-    <div class="actions">
-      <label for="lag-land2" class="btn btn-outline">See Photos</label>
-      <a class="btn btn-wa" target="_blank" rel="noopener"
-         href="https://wa.me/2349162631205?text=Hello%20KARBA!%20I%27m%20interested%20in%20KLFG%20600sqm%2C%20Igbodu%20Epe%20(₦12m%2C%20Survey).">Message on WhatsApp</a>
-    </div>
-
-    <input id="lag-land2" class="modal-toggle" type="checkbox">
-    <div class="photo-modal"><div class="photo-content">
-      <h3>KLFG 600sqm, Igbodu, Epe</h3>
-      <img src="assets/lagos-land2-1.jpg" alt="">
-      <img src="assets/lagos-land2-2.jpg" alt="">
-      <p>Price: ₦12m • Title: Survey</p>
-      <a class="whatsapp-btn" target="_blank" rel="noopener"
-         href="https://wa.me/2349162631205?text=Hello%20KARBA!%20I%27m%20interested%20in%20KLFG%20600sqm%2C%20Igbodu%20Epe%20(₦12m%2C%20Survey).">💬 Message on WhatsApp</a>
-      <label for="lag-land2" class="close-modal">× Close</label>
-    </div></div>
-  </div>
-
-</div>
-
 <div class="prop-grid">
 
   <!-- LAGOS LAND #1 -->
