@@ -847,28 +847,39 @@ KARBA Financial Consultant Ltd; also known simply as <strong>KARBA</strong> prov
 </section>
 
   
-<!-- ===== Insurance Plans (Cards) ===== -->
+<!-- ===== Insurance Plan Types (with modal photos + WhatsApp) ===== -->
 <style>
-  /* container + grid */
+  /* spacing so it doesn’t touch the edges */
+  .info-wrap{margin:0 10px}
   .info-section{margin:28px 0}
   .info-title{font-size:22px;font-weight:800;margin:0 0 12px}
   .info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
-  /* card */
+
   .info-card{border:1px solid var(--line);background:rgba(255,255,255,.06);border-radius:12px;padding:14px}
   .info-card h4{margin:0 0 8px;font-size:18px}
   .info-card ul{margin:0 0 10px 18px;padding:0}
   .info-card li{margin:4px 0}
-  /* inline button */
+
+  /* inline button (same look as property “See Photos”) */
   .btn-inline{display:inline-block;padding:6px 10px;border-radius:8px;border:1px solid var(--gold);color:var(--gold);text-decoration:none}
   .btn-inline:hover{filter:brightness(1.08)}
-  /* small separator before footer */
-  .after-properties-spacer{height:24px}
+
+  /* modal (reuse of your property pattern; add if missing) */
+  .modal-toggle{display:none}
+  .photo-modal{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;align-items:center;justify-content:center;z-index:1000;padding:16px}
+  .modal-toggle:checked + .photo-modal{display:flex}
+  .photo-content{background:#fff;color:#111;max-width:520px;width:100%;border-radius:12px;padding:16px}
+  .photo-content h3{margin:0 0 10px}
+  .photo-content img{width:100%;height:auto;border-radius:8px;margin:6px 0}
+  .whatsapp-btn{display:inline-block;margin-top:10px;padding:8px 12px;border-radius:8px;background:#25D366;color:#fff;text-decoration:none}
+  .close-modal{display:inline-block;margin-left:10px;color:#555;cursor:pointer}
   @media (max-width:600px){
     .info-title{font-size:20px}
     .info-card{padding:12px}
   }
 </style>
 
+<div class="info-wrap">
 <section id="ins-plans" class="info-section">
   <h3 class="info-title">Insurance Plan Types</h3>
 
@@ -878,12 +889,22 @@ KARBA Financial Consultant Ltd; also known simply as <strong>KARBA</strong> prov
     <div class="info-card">
       <h4>Retirees & Immediate Annuity</h4>
       <ul>
-        <li>Guaranteed lifetime income, paid monthly/quarterly</li>
-        <li>Option for spouse/beneficiary continuation</li>
-        <li>Beats bank rates; insulated from market swings</li>
+        <li>Guaranteed lifetime income (monthly/quarterly)</li>
+        <li>Spouse/beneficiary continuation options</li>
+        <li>Insulated from market swings</li>
       </ul>
-      <a class="btn-inline" target="_blank" rel="noopener"
-         href="https://wa.me/2349162631205?text=Hello%20KARBA!%20Please%20share%20photos%20or%20plan%20details%20for%20Retirees%20%26%20Immediate%20Annuity.">See Photos</a>
+      <label for="ins-annuity" class="btn-inline">See Photos</label>
+
+      <!-- modal -->
+      <input id="ins-annuity" class="modal-toggle" type="checkbox">
+      <div class="photo-modal"><div class="photo-content">
+        <h3>Retirees & Immediate Annuity</h3>
+        <img src="assets/ins-annuity-1.jpg" alt="Annuity illustration 1">
+        <img src="assets/ins-annuity-2.jpg" alt="Annuity illustration 2">
+        <a class="whatsapp-btn" target="_blank" rel="noopener"
+           href="https://wa.me/2349162631205?text=Hello%20KARBA!%20I%27m%20interested%20in%20Retirees%20%26%20Immediate%20Annuity.%20Please%20advise.">Message on WhatsApp</a>
+        <label for="ins-annuity" class="close-modal">× Close</label>
+      </div></div>
     </div>
 
     <!-- Family Protection Plans -->
@@ -891,23 +912,41 @@ KARBA Financial Consultant Ltd; also known simply as <strong>KARBA</strong> prov
       <h4>Family Protection Plans</h4>
       <ul>
         <li>Lump-sum payout for income protection</li>
-        <li>Flexible premiums; add riders (critical illness)</li>
-        <li>Ideal for breadwinners & SMEs</li>
+        <li>Flexible premiums + optional riders</li>
+        <li>Works well for breadwinners & SMEs</li>
       </ul>
-      <a class="btn-inline" target="_blank" rel="noopener"
-         href="https://wa.me/2349162631205?text=Hello%20KARBA!%20Please%20share%20photos%20or%20plan%20details%20for%20Family%20Protection%20Plans.">See Photos</a>
+      <label for="ins-family" class="btn-inline">See Photos</label>
+
+      <input id="ins-family" class="modal-toggle" type="checkbox">
+      <div class="photo-modal"><div class="photo-content">
+        <h3>Family Protection Plans</h3>
+        <img src="assets/ins-family-1.jpg" alt="Family protection 1">
+        <img src="assets/ins-family-2.jpg" alt="Family protection 2">
+        <a class="whatsapp-btn" target="_blank" rel="noopener"
+           href="https://wa.me/2349162631205?text=Hello%20KARBA!%20I%27m%20interested%20in%20Family%20Protection%20Plans.">Message on WhatsApp</a>
+        <label for="ins-family" class="close-modal">× Close</label>
+      </div></div>
     </div>
 
     <!-- Children Education Protection -->
     <div class="info-card">
       <h4>Children Education Protection</h4>
       <ul>
-        <li>Target funding for school fees & milestones</li>
-        <li>Partial withdrawals on schedule</li>
-        <li>Benefit continues if sponsor passes away</li>
+        <li>Funds school fees & milestones on schedule</li>
+        <li>Partial withdrawals allowed</li>
+        <li>Waiver: benefits continue if sponsor dies</li>
       </ul>
-      <a class="btn-inline" target="_blank" rel="noopener"
-         href="https://wa.me/2349162631205?text=Hello%20KARBA!%20Please%20share%20photos%20or%20plan%20details%20for%20Children%20Education%20Protection.">See Photos</a>
+      <label for="ins-edu" class="btn-inline">See Photos</label>
+
+      <input id="ins-edu" class="modal-toggle" type="checkbox">
+      <div class="photo-modal"><div class="photo-content">
+        <h3>Children Education Protection</h3>
+        <img src="assets/ins-edu-1.jpg" alt="Education plan 1">
+        <img src="assets/ins-edu-2.jpg" alt="Education plan 2">
+        <a class="whatsapp-btn" target="_blank" rel="noopener"
+           href="https://wa.me/2349162631205?text=Hello%20KARBA!%20I%27m%20interested%20in%20Children%20Education%20Protection%20plans.">Message on WhatsApp</a>
+        <label for="ins-edu" class="close-modal">× Close</label>
+      </div></div>
     </div>
 
     <!-- Whole-Life Plan -->
@@ -918,8 +957,17 @@ KARBA Financial Consultant Ltd; also known simply as <strong>KARBA</strong> prov
         <li>Cash value build-up & policy loans</li>
         <li>Estate planning & legacy benefits</li>
       </ul>
-      <a class="btn-inline" target="_blank" rel="noopener"
-         href="https://wa.me/2349162631205?text=Hello%20KARBA!%20Please%20share%20photos%20or%20plan%20details%20for%20Whole-Life%20Plan.">See Photos</a>
+      <label for="ins-whole" class="btn-inline">See Photos</label>
+
+      <input id="ins-whole" class="modal-toggle" type="checkbox">
+      <div class="photo-modal"><div class="photo-content">
+        <h3>Whole-Life Plan</h3>
+        <img src="assets/ins-whole-1.jpg" alt="Whole life plan 1">
+        <img src="assets/ins-whole-2.jpg" alt="Whole life plan 2">
+        <a class="whatsapp-btn" target="_blank" rel="noopener"
+           href="https://wa.me/2349162631205?text=Hello%20KARBA!%20I%27m%20interested%20in%20Whole-Life%20Plan%20options.">Message on WhatsApp</a>
+        <label for="ins-whole" class="close-modal">× Close</label>
+      </div></div>
     </div>
 
     <!-- Term Assurance -->
@@ -927,11 +975,20 @@ KARBA Financial Consultant Ltd; also known simply as <strong>KARBA</strong> prov
       <h4>Term Assurance</h4>
       <ul>
         <li>High cover for 5–30 years at low cost</li>
-        <li>Convertible to whole-life in future</li>
-        <li>Great for mortgage or income replacement</li>
+        <li>Convertible to whole-life later</li>
+        <li>Great for mortgage/income replacement</li>
       </ul>
-      <a class="btn-inline" target="_blank" rel="noopener"
-         href="https://wa.me/2349162631205?text=Hello%20KARBA!%20Please%20share%20photos%20or%20plan%20details%20for%20Term%20Assurance.">See Photos</a>
+      <label for="ins-term" class="btn-inline">See Photos</label>
+
+      <input id="ins-term" class="modal-toggle" type="checkbox">
+      <div class="photo-modal"><div class="photo-content">
+        <h3>Term Assurance</h3>
+        <img src="assets/ins-term-1.jpg" alt="Term assurance 1">
+        <img src="assets/ins-term-2.jpg" alt="Term assurance 2">
+        <a class="whatsapp-btn" target="_blank" rel="noopener"
+           href="https://wa.me/2349162631205?text=Hello%20KARBA!%20I%27m%20interested%20in%20Term%20Assurance.">Message on WhatsApp</a>
+        <label for="ins-term" class="close-modal">× Close</label>
+      </div></div>
     </div>
 
     <!-- Motor Vehicle Insurance -->
@@ -939,19 +996,28 @@ KARBA Financial Consultant Ltd; also known simply as <strong>KARBA</strong> prov
       <h4>Motor Vehicle Insurance</h4>
       <ul>
         <li><strong>Comprehensive:</strong> damage, theft, fire, third-party</li>
-        <li><strong>Third-Party:</strong> affordable legal liability cover</li>
+        <li><strong>Third-Party:</strong> affordable liability cover</li>
         <li>Instant verification & easy claims support</li>
       </ul>
-      <a class="btn-inline" target="_blank" rel="noopener"
-         href="https://wa.me/2349162631205?text=Hello%20KARBA!%20Please%20share%20photos%20or%20plan%20details%20for%20Motor%20Vehicle%20Insurance%20(Comprehensive%20%2B%20Third-Party).">See Photos</a>
+      <label for="ins-motor" class="btn-inline">See Photos</label>
+
+      <input id="ins-motor" class="modal-toggle" type="checkbox">
+      <div class="photo-modal"><div class="photo-content">
+        <h3>Motor Vehicle Insurance</h3>
+        <img src="assets/ins-motor-1.jpg" alt="Motor insurance 1">
+        <img src="assets/ins-motor-2.jpg" alt="Motor insurance 2">
+        <a class="whatsapp-btn" target="_blank" rel="noopener"
+           href="https://wa.me/2349162631205?text=Hello%20KARBA!%20I%27m%20interested%20in%20Motor%20Vehicle%20Insurance%20(Comprehensive%20or%20Third-Party).">Message on WhatsApp</a>
+        <label for="ins-motor" class="close-modal">× Close</label>
+      </div></div>
     </div>
 
   </div>
 </section>
+</div>
 
-<!-- little breathing space before footer -->
-<div class="after-properties-spacer"></div>
-
+<!-- breathing space before footer -->
+<div style="height:24px"></div>
   
   <section class="section" id="contact">
     <div class="container row">
