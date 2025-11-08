@@ -225,6 +225,16 @@
   .prop-card.sm{ padding:10px }
 }
     </style>
+  <style>
+      .cols { display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:20px; }
+      .col-box { border:1px solid #345; padding:14px; }
+      .col-title { font-weight:700; margin:0 0 8px 0; }
+      .prop-list { list-style:none; margin:0; padding:0; border-top:1px solid #345; }
+      .prop-list li { border-top:1px solid #345; padding:10px 0; display:flex; justify-content:space-between; gap:10px; }
+      .muted { opacity:.9; }
+      .cta-link { padding:6px 10px; border:1px solid #f0c040; text-decoration:none; color:#f0c040; white-space:nowrap; }
+      @media (max-width:600px){ .prop-list li{ flex-direction:column; align-items:flex-start; } }
+    </style>
 </head>      
 <body>
 <header class="header">
@@ -417,18 +427,7 @@ KARBA Financial Consultant Ltd; also known simply as <strong>KARBA</strong> prov
   <div class="container">
     <h2>Available Properties</h2>
     <p style="opacity:.7; margin-top:-6px;">Last updated: 8/11/2025</p>
-
-    <style>
-      .cols { display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:20px; }
-      .col-box { border:1px solid #345; padding:14px; }
-      .col-title { font-weight:700; margin:0 0 8px 0; }
-      .prop-list { list-style:none; margin:0; padding:0; border-top:1px solid #345; }
-      .prop-list li { border-top:1px solid #345; padding:10px 0; display:flex; justify-content:space-between; gap:10px; }
-      .muted { opacity:.9; }
-      .cta-link { padding:6px 10px; border:1px solid #f0c040; text-decoration:none; color:#f0c040; white-space:nowrap; }
-      @media (max-width:600px){ .prop-list li{ flex-direction:column; align-items:flex-start; } }
-    </style>
-
+    
   <div class="state-card">
   <h3 class="state-title">Investments (Land Banking)</h3>
   <div class="prop-grid sm">
@@ -472,29 +471,7 @@ KARBA Financial Consultant Ltd; also known simply as <strong>KARBA</strong> prov
         <label for="inv-lag-2" class="close-modal">× Close</label>
       </div></div>
     </div>
-
-    <!-- INV #3 -->
-    <div class="prop-card sm">
-      <div class="prop-title">Western Green (Ibeju) — Land Banking</div>
-      <div class="meta-line">
-        <span>From ₦750k/unit</span>
-        <label for="inv-lag-3" class="btn-inline">See Photos</label>
-        <span class="muted">• Yield: 9–12% p.a.</span>
-      </div>
-      <input id="inv-lag-3" class="modal-toggle" type="checkbox">
-      <div class="photo-modal"><div class="photo-content">
-        <h3>Western Green (Ibeju)</h3>
-        <img src="assets/lagos-inv3-1.jpg" alt="">
-        <img src="assets/lagos-inv3-2.jpg" alt="">
-        <p>From ₦750k/unit • Yield: 9–12% p.a.</p>
-        <a class="whatsapp-btn" target="_blank" rel="noopener"
-           href="https://wa.me/2349162631205?text=Hello%20KARBA!%20Interested%20in%20Western%20Green%20(Ibeju)%20land%20banking.">💬 Message on WhatsApp</a>
-        <label for="inv-lag-3" class="close-modal">× Close</label>
-      </div></div>
-    </div>
-
   </div>
-</div>
 
   <div class="state-card">
   <h3 class="state-title">Lagos — Houses & Apartments</h3>
