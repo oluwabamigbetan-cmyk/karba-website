@@ -24,3 +24,20 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#ffffff;
+color:#0f172a;
+}
+
+section{
+overflow:hidden;
+}
+
+::selection{
+background:#D4AF37;
+color:white;
+}

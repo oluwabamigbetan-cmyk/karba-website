@@ -1,68 +1,46 @@
-"use client";
-
 import Link from "next/link";
 import Image from "next/image";
-import { Menu } from "lucide-react";
 
 export default function Navbar() {
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200">
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+    <nav className="bg-white shadow-md sticky top-0 z-50">
+      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
-        <Link href="/" className="flex items-center gap-3">
-
+        <Link href="/">
           <Image
-            src="/images/branding/karba-logo.png"
+            src="/images/logo.png"
             alt="KARBA Financial Consultant Ltd"
-            width={55}
-            height={55}
+            width={180}
+            height={60}
             priority
           />
-
-          <div>
-            <h2 className="font-bold text-slate-900">
-              KARBA
-            </h2>
-
-            <p className="text-xs text-slate-500">
-              Financial Consultant Ltd
-            </p>
-          </div>
-
         </Link>
 
-        <nav className="hidden lg:flex items-center gap-8">
+        <div className="hidden md:flex gap-8 text-gray-700 font-medium">
 
           <Link href="/">Home</Link>
 
           <Link href="/about">About</Link>
 
-          <Link href="/insurance-advisory">Insurance</Link>
+          <Link href="/insurance-advisory">
+            Insurance
+          </Link>
 
-          <Link href="/real-estate-advisory">Property</Link>
+          <Link href="/investment-advisory">
+            Investment
+          </Link>
 
-          <Link href="/insights">Insights</Link>
+          <Link href="/book-consultation">
+            Consultation
+          </Link>
 
-          <Link href="/contact">Contact</Link>
-
-        </nav>
-
-        <div className="hidden lg:flex gap-4">
-
-          <Link
-            href="/book-consultation"
-            className="rounded-xl bg-[#D4AF37] px-5 py-3 font-semibold hover:opacity-90 transition"
-          >
-            Book Consultation
+          <Link href="/insights">
+            Insights
           </Link>
 
         </div>
 
-        <button className="lg:hidden">
-          <Menu size={28} />
-        </button>
-
       </div>
-    </header>
+    </nav>
   );
 }

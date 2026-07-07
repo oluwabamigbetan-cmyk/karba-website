@@ -65,13 +65,12 @@ export default function Hero() {
           >
 
             <Image
-              src="/images/founder/founder.jpg"
-              alt="Founder"
-              width={560}
-              height={650}
-              priority
-              className="rounded-3xl shadow-2xl"
-            />
+  src="/images/founder/founder.jpg"
+  alt="Babatunde Bamigbetan, Founder of KARBA Financial Consultant Ltd"
+  width={700}
+  height={900}
+  className="rounded-3xl object-cover"
+/>
 
           </motion.div>
 
