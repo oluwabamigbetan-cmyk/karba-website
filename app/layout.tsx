@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
@@ -125,6 +126,9 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-white text-slate-900">
+
+        <GoogleAnalytics />
+        
         <Navbar />
 
         <main className="flex-1">
@@ -134,6 +138,7 @@ export default function RootLayout({
         <FloatingWhatsApp />
 
         <Footer />
+        
         <script
   type="application/ld+json"
   dangerouslySetInnerHTML={{

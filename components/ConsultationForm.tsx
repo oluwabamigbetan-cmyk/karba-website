@@ -27,7 +27,7 @@ export default function ConsultationForm() {
 
   const onSubmit = async (data: FormData) => {
     const response = await fetch(
-      "https://formspree.io/f/xlgyvpbd",
+      "https://formspree.io/f/xlgyyrap",
       {
         method: "POST",
         headers: {
