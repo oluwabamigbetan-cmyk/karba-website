@@ -108,7 +108,7 @@ export default function AboutPage() {
 
       <p className="mt-6 text-lg text-gray-600 leading-9">
         We understand that financial decisions can be complex.
-        That's why we are committed to providing clear, ethical and
+        That is why we are committed to providing clear, ethical and
         personalised advisory services that empower our clients to
         protect what matters most, build lasting wealth and plan
         confidently for the future.
@@ -150,7 +150,7 @@ export default function AboutPage() {
         </h3>
 
         <p className="mt-6 text-gray-600 leading-8">
-          To become one of Nigeria's most trusted financial consultancy
+          To become one of Nigerian most trusted financial consultancy
           firms, recognised for excellence, integrity and long-term client
           success.
         </p>
@@ -321,7 +321,7 @@ export default function AboutPage() {
   <div className="max-w-5xl mx-auto px-6 text-center">
 
     <h2 className="text-4xl md:text-5xl font-bold">
-      Let's Build Your Financial Future Together
+      Let us Build Your Financial Future Together
     </h2>
 
     <p className="mt-8 text-xl text-slate-300 leading-relaxed">
@@ -350,6 +350,6 @@ export default function AboutPage() {
 
   </div>
 </section>
- </>
+</>
   );
 }
