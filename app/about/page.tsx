@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function AboutPage() {
   return (
@@ -270,9 +271,13 @@ export default function AboutPage() {
 
         {/* Replace with your professional photo later */}
 
-        <div className="w-full h-[500px] rounded-3xl bg-slate-200 flex items-center justify-center text-slate-500">
-          Founder Photo
-        </div>
+        <Image
+  src="/images/founder.jpg"
+  alt="Babatunde Bamigbetan"
+  width={600}
+  height={700}
+  className="rounded-3xl object-cover w-full h-[500px]"
+/>
 
       </div>
 
