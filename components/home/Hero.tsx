@@ -10,7 +10,7 @@ export default function Hero() {
 
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0 bg-cover bg-center md:bg-center bg-[center_30%]"
         style={{
           backgroundImage: 'url("/images/hero-bg.jpg")',
         }}
@@ -20,17 +20,16 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-r from-[#071A3D]/95 via-[#071A3D]/70 to-black/35" />
 
       {/* Hero Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 py-32">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-8 py-24 md:py-32">
 
-        <motion.span
-          initial={{ opacity: 0, y: -15 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="inline-block bg-yellow-500 text-slate-900 px-4 py-2 rounded-full font-semibold"
-        >
-          KARBA FINANCIAL CONSULTANT LTD
-        </motion.span>
-
+        <motion.div
+  initial={{ opacity: 0, y: -15 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.5 }}
+  className="inline-flex items-center rounded-full border border-[#D4AF37] bg-white/5 backdrop-blur-sm px-5 py-2 text-sm md:text-base font-semibold tracking-[0.15em] text-[#D4AF37]"
+>
+  KARBA Financial Consultant Ltd
+</motion.div>
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -52,9 +51,7 @@ export default function Hero() {
           transition={{ delay: 0.3, duration: 0.8 }}
           className="mt-8 text-xl max-w-3xl text-slate-200 leading-relaxed"
         >
-          Professional Insurance Advisory and Real Estate Advisory helping
-          individuals, families and businesses make informed financial
-          decisions with confidence.
+          Professional Insurance Advisory, Real Estate Advisory and Financial Advisory services that help individuals, families and businesses make informed financial decisions with confidence.
         </motion.p>
 
         <motion.div
@@ -71,10 +68,10 @@ export default function Hero() {
           </Link>
 
           <Link
-            href="/about"
+  href="/contact"
             className="border border-white px-8 py-4 rounded-xl flex items-center gap-2 hover:bg-white hover:text-slate-900 transition-all duration-300"
           >
-            Learn More
+            Contact Us
             <ArrowRight size={18} />
           </Link>
         </motion.div>

@@ -100,7 +100,6 @@ export default function InsightsPage() {
                   href={article.slug}
                   className="inline-block mt-8 text-[#071A3D] font-semibold hover:text-[#D4AF37] transition"
                 >
-                  Read More →
                 </Link>
               </div>
             ))}

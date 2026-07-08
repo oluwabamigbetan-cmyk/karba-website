@@ -18,7 +18,7 @@ export default function ContactPage() {
 
           <p className="mt-8 text-xl text-slate-300 max-w-3xl mx-auto">
             Whether you need insurance advice, real estate guidance, or financial planning,
-            we're here to help you make informed decisions with confidence.
+            we are here to help you make informed decisions with confidence.
           </p>
 
         </div>
@@ -54,7 +54,7 @@ export default function ContactPage() {
                 <Mail className="text-[#D4AF37]" />
                 <div>
                   <h3 className="font-semibold">Email</h3>
-                  <p>oluwabamigbetan@gmail.com</p>
+                  <p>info@karbafinancialconsultant.com</p>
                 </div>
               </div>
 
@@ -64,6 +64,8 @@ export default function ContactPage() {
                   <h3 className="font-semibold">Business Hours</h3>
                   <p>Monday – Friday</p>
                   <p>9:00 AM – 5:00 PM</p>
+                  <p>Saturday</p>
+                  <p>10:00 AM – 3:00 PM</p>
                 </div>
               </div>
 
@@ -71,9 +73,9 @@ export default function ContactPage() {
                 <MapPin className="text-[#D4AF37]" />
                 <div>
                   <h3 className="font-semibold">Office</h3>
-                  <p>Alimosho, Lagos, Nigeria</p>
+                  <p>Lagos, Nigeria</p>
                   <p className="text-sm text-gray-500">
-                    Office address available by appointment.
+                    Serving clients accross Nigeria through virtual consultations and in-person consultations by appointments.
                   </p>
                 </div>
               </div>
@@ -90,7 +92,7 @@ export default function ContactPage() {
             </h2>
 
             <p className="mt-6 text-gray-600 leading-8">
-              Book a consultation and let's discuss your financial,
+              Book a consultation and let us discuss your financial,
               insurance or real estate needs.
             </p>
 

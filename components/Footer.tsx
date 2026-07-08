@@ -134,12 +134,10 @@ export default function Footer() {
 
         <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between">
 
-          <p className="text-slate-400">
-
-            © 2026 KARBA Financial Consultant Ltd.
-            All Rights Reserved.
-
-          </p>
+          <div className="text-center text-sm text-slate-400 leading-7">
+  <p>© 2026 KARBA Financial Consultant Ltd.</p>
+  <p>All rights reserved.</p>
+</div>
 
           <div className="flex gap-6 mt-4 md:mt-0">
 
