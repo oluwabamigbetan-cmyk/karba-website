@@ -4,13 +4,13 @@ const services = [
   {
     title: "Insurance Advisory",
     description:
-      "Professional guidance on life insurance, family protection, children's education planning, retirement planning and wealth preservation.",
+      "Insurance is more than a policy, it is a foundation for financial security. We help you identify potential risks, evaluate suitable coverage options, and make informed decisions that safeguard your future, family, and business.",
     link: "/insurance-advisory",
   },
   {
     title: "Real Estate Advisory",
     description:
-      "Helping clients make informed property investment decisions through trusted professional advisory services.",
+      "Successful real estate investments require sound advice and strategic planning. We offer professional guidance on property acquisition, sales, leasing, rentals, and investment opportunities, ensuring every decision contributes to your long-term financial success.",
     link: "/real-estate-advisory",
   },
 ];

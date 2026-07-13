@@ -51,7 +51,7 @@ export default function Hero() {
           transition={{ delay: 0.3, duration: 0.8 }}
           className="mt-8 text-xl max-w-3xl text-slate-200 leading-relaxed"
         >
-          Professional Insurance Advisory, Real Estate Advisory and Financial Advisory services that help individuals, families and businesses make informed financial decisions with confidence.
+          Professional Insurance, Real Estate and Financial Advisory services that help individuals, families and businesses make informed financial decisions with confidence.
         </motion.p>
 
         <motion.div

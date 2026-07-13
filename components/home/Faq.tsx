@@ -7,7 +7,7 @@ const faqs = [
   {
     question: "What services does KARBA Financial Consultant Ltd provide?",
     answer:
-      "We provide professional Insurance Advisory, Real Estate Advisory and Financial Advisory services for individuals, families and businesses.",
+      "We provide professional Insurance, Real Estate and Financial Advisory services for individuals, families and businesses.",
   },
   {
     question: "Why should I use a financial consultant?",

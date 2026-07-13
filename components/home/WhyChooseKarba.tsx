@@ -73,8 +73,7 @@ export default function WhyChoose() {
 
           <p className="mt-6 text-lg text-gray-600 max-w-3xl mx-auto">
             We combine professional expertise, integrity and personalised
-            financial guidance to help you make confident decisions for today
-            and tomorrow.
+            financial guidance to help you make confident decisions.
           </p>
         </motion.div>
 

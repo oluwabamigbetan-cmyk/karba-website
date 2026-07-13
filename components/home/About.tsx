@@ -26,10 +26,7 @@ export default function About() {
           </h2>
 
           <p className="mt-6 max-w-3xl mx-auto text-lg text-gray-600 leading-relaxed">
-            KARBA Financial Consultant Ltd provides professional Insurance
-            Advisory, Real Estate Advisory and Financial Planning services,
-            helping individuals, families and businesses protect wealth,
-            grow investments and build lasting financial security.
+            At KARBA Financial Consultant Ltd, we believe that sound financial decisions create lasting security and opportunities. Through our professional insurance, real estate, and financial advisory services, we help individuals, families, and businesses protect what matters most, grow their wealth, and achieve their financial goals with confidence.
           </p>
         </motion.div>
 
