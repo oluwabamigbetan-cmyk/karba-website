@@ -296,24 +296,15 @@ export default function AboutPage() {
 
         <p className="mt-8 text-lg text-gray-600 leading-9">
           KARBA Financial Consultant Ltd, is a financial consulting firm committed to helping individuals, families, and businesses make informed financial decisions with confidence.
-
-Driven by a passion for financial empowerment and long-term wealth creation, KARBA was founded with a clear vision: to provide trusted, ethical, and personalized advisory services that enable clients to protect their assets, grow their wealth, and achieve lasting financial security.
-
-Under my leadership, KARBA delivers professional advisory services in insurance, real estate, and financial planning, combining strategic insight with a client-first approach. I believe that every financial decision should be guided by knowledge, integrity, and careful planning, not uncertainty or guesswork.
-
-My philosophy is simple: every client deserves honest advice, tailored solutions, and a trusted partner who is genuinely interested in their success. This commitment has shaped our reputation for professionalism, transparency, and excellence in service delivery.
-
-Beyond providing financial solutions, i am dedicated to promoting financial literacy and empowering people to make sound decisions that create lasting value for themselves, their families, and future generations.
-
-As KARBA continues to grow, our vision remains unchanged, to build one of Nigeria most trusted financial consulting firms, recognized for transforming lives through expert guidance, meaningful relationships, and unwavering integrity.
-
-“Success is not just about building wealth; it is about protecting it, growing it wisely, and creating a legacy that lasts.” -Bamigbetan Babatunde
+          Driven by a passion for financial empowerment and long-term wealth creation, KARBA was founded with a clear vision: to provide trusted, ethical, and personalized advisory services that enable clients to protect their assets, grow their wealth, and achieve lasting financial security.
+          Under my leadership, KARBA delivers professional advisory services in insurance, real estate, and financial planning, combining strategic insight with a client-first approach. I believe that every financial decision should be guided by knowledge, integrity, and careful planning, not uncertainty or guesswork.
+          My philosophy is simple: every client deserves honest advice, tailored solutions, and a trusted partner who is genuinely interested in their success. This commitment has shaped our reputation for professionalism, transparency, and excellence in service delivery.
+          Beyond providing financial solutions, i am dedicated to promoting financial literacy and empowering people to make sound decisions that create lasting value for themselves, their families, and future generations.
+          As KARBA continues to grow, our vision remains unchanged, to build one of Nigeria most trusted financial consulting firms, recognized for transforming lives through expert guidance, meaningful relationships, and unwavering integrity.
         </p>
 
         <p className="mt-6 text-lg text-gray-600 leading-9">
-          Whether you are protecting your loved ones, planning your future or building
-          wealth through real estate, we are committed to providing guidance that is
-          practical, ethical and tailored to your unique goals.
+          “Success is not just about building wealth; it is about protecting it, growing it wisely, and creating a legacy that lasts.”  (Founder / CEO) Bamigbetan Babatunde
         </p>
 
       </div>
