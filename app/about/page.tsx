@@ -67,8 +67,8 @@ export default function AboutPage() {
       <p className="mt-8 text-lg text-gray-600 leading-9">
         KARBA Financial Consultant Ltd is a Nigerian financial consultancy
         committed to helping individuals, families and businesses protect,
-        grow and preserve wealth through professional Insurance Advisory,
-        Real Estate Advisory and Financial Advisory services.
+        grow and preserve wealth through professional Insurance,
+        Real Estate and Financial Advisory services.
       </p>
 
       <p className="mt-6 text-lg text-gray-600 leading-9">
