@@ -20,9 +20,9 @@ export default function AboutPage() {
           </h1>
 
           <p className="mt-8 max-w-3xl text-xl text-slate-300 leading-relaxed">
-            KARBA Financial Consultant Ltd helps individuals, families and
+            KARBA Financial Consultant Ltd help individuals, families and
             businesses make informed financial decisions through trusted
-            Insurance Advisory, Real Estate Advisory and Financial Advisory
+            Insurance, Real Estate and Financial Advisory
             services.
           </p>
 
@@ -107,7 +107,7 @@ export default function AboutPage() {
       </p>
 
       <p className="mt-6 text-lg text-gray-600 leading-9">
-        We understand that financial decisions can be complex.
+        We understand that financial decisions can be complex,
         That is why we are committed to providing clear, ethical and
         personalised advisory services that empower our clients to
         protect what matters most, build lasting wealth and plan
@@ -164,10 +164,9 @@ export default function AboutPage() {
         <ul className="mt-6 space-y-3 text-gray-600">
           <li>• Integrity</li>
           <li>• Professionalism</li>
-          <li>• Client First</li>
-          <li>• Excellence</li>
-          <li>• Transparency</li>
-          <li>• Continuous Learning</li>
+          <li>• Innovation</li>
+          <li>• Client-centered service</li>
+          <li>• Long-term relationships</li>
         </ul>
       </div>
 
@@ -296,10 +295,19 @@ export default function AboutPage() {
         </p>
 
         <p className="mt-8 text-lg text-gray-600 leading-9">
-          At KARBA Financial Consultant Ltd, our mission is to help individuals,
-          families and businesses make informed financial decisions with confidence.
-          We believe that trust, professionalism and long-term relationships are the
-          foundation of lasting financial success.
+          KARBA Financial Consultant Ltd, is a financial consulting firm committed to helping individuals, families, and businesses make informed financial decisions with confidence.
+
+Driven by a passion for financial empowerment and long-term wealth creation, KARBA was founded with a clear vision: to provide trusted, ethical, and personalized advisory services that enable clients to protect their assets, grow their wealth, and achieve lasting financial security.
+
+Under my leadership, KARBA delivers professional advisory services in insurance, real estate, and financial planning, combining strategic insight with a client-first approach. I believe that every financial decision should be guided by knowledge, integrity, and careful planning, not uncertainty or guesswork.
+
+My philosophy is simple: every client deserves honest advice, tailored solutions, and a trusted partner who is genuinely interested in their success. This commitment has shaped our reputation for professionalism, transparency, and excellence in service delivery.
+
+Beyond providing financial solutions, i am dedicated to promoting financial literacy and empowering people to make sound decisions that create lasting value for themselves, their families, and future generations.
+
+As KARBA continues to grow, our vision remains unchanged, to build one of Nigeria most trusted financial consulting firms, recognized for transforming lives through expert guidance, meaningful relationships, and unwavering integrity.
+
+“Success is not just about building wealth; it is about protecting it, growing it wisely, and creating a legacy that lasts.” -Bamigbetan Babatunde
         </p>
 
         <p className="mt-6 text-lg text-gray-600 leading-9">
