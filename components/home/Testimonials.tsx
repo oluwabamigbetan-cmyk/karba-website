@@ -1,20 +1,21 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Business Owner",
-    text: "KARBA provided clear financial guidance that helped me choose the right protection for my business. The process was professional and transparent.",
+    name: "Mrs. Adeola A.",
+    text: "KARBA helped me put a practical Children's Education Plan in place. I now have peace of mind knowing my children's future education is financially secure.",
   },
   {
-    name: "Young Family",
-    text: "We received excellent advice on family protection and children's education planning. Every recommendation was easy to understand.",
+    name: "Mr. Michael O.",
+    text: "The Family Protection Plan recommended by KARBA gave me confidence that my loved ones will be financially protected no matter what the future holds.",
   },
   {
-    name: "Property Investor",
-    text: "The real estate advisory service gave me confidence to make informed investment decisions. I highly recommend KARBA.",
+    name: "Mrs. Grace E.",
+    text: "Buying my house became much easier with KARBA's professional real estate advisory. Their guidance helped me make the right decision with confidence.",
   },
 ];
 
@@ -22,7 +23,6 @@ export default function Testimonials() {
   return (
     <section className="py-24 bg-slate-50">
       <div className="max-w-7xl mx-auto px-6">
-
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -50,7 +50,7 @@ export default function Testimonials() {
               className="bg-white rounded-2xl p-8 shadow-sm border border-gray-200 hover:border-[#D4AF37] hover:shadow-xl transition-all"
             >
               <div className="flex gap-1 text-[#D4AF37]">
-                {[1,2,3,4,5].map((star) => (
+                {[1, 2, 3, 4, 5].map((star) => (
                   <Star key={star} size={18} fill="currentColor" />
                 ))}
               </div>
@@ -66,6 +66,14 @@ export default function Testimonials() {
           ))}
         </div>
 
+        <div className="mt-14 text-center">
+          <Link
+            href="/testimonials"
+            className="inline-flex items-center rounded-xl bg-[#071A3D] px-8 py-4 text-white font-semibold hover:bg-slate-800 transition"
+          >
+            View More Testimonials →
+          </Link>
+        </div>
       </div>
     </section>
   );

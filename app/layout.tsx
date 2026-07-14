@@ -24,33 +24,48 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
 
   title: {
-    default: "KARBA Financial Consultant Ltd",
+    default: "KARBA Financial Consultant Ltd | Insurance, Real Estate & Financial Advisory",
     template: "%s | KARBA Financial Consultant Ltd",
   },
 
-  description:
-    "Professional Insurance Advisory, Financial Planning and Real Estate Consultancy in Nigeria. Helping individuals, families and businesses protect wealth, grow investments and leave a lasting legacy.",
+    description:
+"Professional insurance, financial planning and real estate advisory services in Nigeria. KARBA Financial Consultant Ltd helps individuals, families and businesses build financial security, protect their future, grow wealth and make informed property investment decisions.",
 
   applicationName: "KARBA Financial Consultant Ltd",
 
   keywords: [
-    "KARBA Financial Consultant Ltd",
-    "Insurance Advisory Nigeria",
-    "Life Insurance",
-    "Children Education Planning",
-    "Family Protection",
-    "Retirement Planning",
-    "Annuity",
-    "Financial Planning",
-    "Real Estate Consultancy",
-    "Property Sales",
-    "Property Purchase",
-    "Property Rental",
-    "Property Leasing",
-    "Property Investment",
-    "Lagos",
-    "Nigeria",
-  ],
+  "KARBA",
+  "KARBA Financial Consultant",
+  "KARBA Financial Consultant Ltd",
+  "Financial Consultant Nigeria",
+  "Insurance Advisory",
+  "Life Insurance",
+  "Children Education Planning",
+  "Family Protection Plan",
+  "Retirement Planning",
+  "Annuity",
+  "Retirement and Annuity",
+  "Insurance Advisory Nigeria",
+  "Family Protection",
+  "Estate Planning",
+  "Financial Planning",
+  "Investment Planning",
+  "Real Estate Advisory",
+  "Property Investment",
+  "Land Sales",
+  "House Sales",
+  "Apartment Sales",
+  "Apartment Rentals",
+  "Property Leasing",
+  "Commercial Property",
+  "Property Due Diligence",
+  "Real Estate Consultancy",
+  "Property Rental",
+  "Property Sales",
+  "Property Purchase",
+  "Lagos",
+  "Nigeria",
+],
 
   authors: [
     {
@@ -73,7 +88,7 @@ export const metadata: Metadata = {
   siteName: "KARBA Financial Consultant Ltd",
   title: "KARBA Financial Consultant Ltd",
   description:
-    "Professional Insurance Advisory, Financial Planning and Real Estate Consultancy helping individuals, families and businesses build financial confidence.",
+      "Professional Insurance Advisory, Financial Planning and Real Estate Consultancy in Nigeria. Helping individuals, families and businesses protect wealth, grow investments and secure their future.",
 
   images: [
     {
@@ -88,8 +103,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "KARBA Financial Consultant Ltd",
-    description:
-      "Live Confidently. Invest Wisely. Leave a Legacy.",
+     description:
+      "Real Estate Consultancy • Insurance Advisory • Financial Planning",
 
     images: ["/images/logo.png"],
   },
@@ -140,11 +155,14 @@ export default function RootLayout({
         <Footer />
         
         <script
+        id="karba-schema"
   type="application/ld+json"
   dangerouslySetInnerHTML={{
     __html: JSON.stringify({
       "@context": "https://schema.org",
-      "@type": "FinancialService",
+      "@type": "FinancialService", 
+
+       "@id": "https://www.karbafinancialconsultant.com/#organization",
 
       name: "KARBA Financial Consultant Ltd",
 
@@ -155,7 +173,7 @@ export default function RootLayout({
       image: "https://karbafinancialconsultant.com/images/og-image.jpg",
 
       description:
-        "Professional Insurance Advisory, Financial Planning and Real Estate Consultancy in Nigeria.",
+    "Professional insurance advisory, financial planning and real estate consultancy helping individuals, families and businesses build financial security and long-term wealth.",
 
       email: "info@karbafinancialconsultant.com",
 
@@ -166,15 +184,39 @@ export default function RootLayout({
         name: "Babatunde Bamigbetan",
       },
 
+       foundingLocation: {
+    "@type": "Country",
+    name: "Nigeria"
+  },
+
       address: {
         "@type": "PostalAddress",
         addressLocality: "Lagos",
         addressCountry: "Nigeria",
       },
 
-      areaServed: "Nigeria",
+      areaServed: {
+    "@type": "Country",
+    name: "Nigeria"
+  },
 
-      sameAs: [
+  priceRange: "$$",
+
+  knowsAbout: [
+    "Life Insurance",
+    "Children Education Planning",
+    "Family Protection",
+    "Retirement Planning",
+    "Annuity",
+    "Financial Planning",
+    "Estate Planning",
+    "Property Investment",
+    "Real Estate Advisory",
+    "Property Sales",
+    "Property Leasing"
+  ],
+
+    sameAs: [
         "https://www.linkedin.com/",
         "https://facebook.com/",
         "https://instagram.com/",

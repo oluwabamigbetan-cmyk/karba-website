@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
 
 const articles = [
   {
@@ -68,13 +67,6 @@ export default function KnowledgeCenter() {
                 {article.description}
               </p>
 
-              <Link
-                href={article.link}
-                className="inline-flex items-center gap-2 mt-8 text-[#071A3D] font-semibold hover:text-[#D4AF37] transition"
-              >
-                Read Article
-                <ArrowRight size={18} />
-              </Link>
             </motion.div>
           ))}
 

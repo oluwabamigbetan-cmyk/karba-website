@@ -52,7 +52,7 @@ export default function ServicesPage() {
 
                 <li>✔ Life Insurance</li>
 
-                <li>✔ Children's Education Planning</li>
+                <li>✔ Children Education Planning</li>
 
                 <li>✔ Family Protection Planning</li>
 
@@ -64,6 +64,14 @@ export default function ServicesPage() {
 
                 <li>✔ Wealth Protection Strategies</li>
 
+                <div className="mt-6">
+  <Link
+  href="/insurance-advisory"
+  className="inline-block mt-6 rounded-lg bg-[#C89B3C] px-5 py-2 text-white font-medium hover:bg-[#B4882D] transition"
+>
+  Learn More
+</Link>
+</div>
               </ul>
 
             </div>
@@ -98,6 +106,16 @@ export default function ServicesPage() {
                 <li>✔ Property Investment Advisory</li>
 
                 <li>✔ Property Due Diligence</li>
+
+                <div className="mt-6">
+  
+  <Link
+  href="/real-estate-advisory"
+  className="inline-block mt-6 rounded-lg bg-[#C89B3C] px-5 py-2 text-white font-medium hover:bg-[#B4882D] transition"
+>
+  Learn More
+</Link>
+</div>
 
               </ul>
 
@@ -144,7 +162,7 @@ export default function ServicesPage() {
 
               <p className="mt-6 text-slate-300 leading-8">
                 Every financial decision deserves expert guidance.
-                Let's discuss your goals and recommend the best
+                Let us discuss your goals and recommend the best
                 solution for your situation.
               </p>
 
