@@ -1,56 +1,42 @@
-const faqs = [
-  {
-    question: "Do you sell properties directly?",
-    answer:
-      "Our primary role is to provide professional real estate advisory and consultancy services. Where appropriate, we may introduce clients to trusted professionals while maintaining our advisory role.",
-  },
-  {
-    question: "Can you help first-time property buyers?",
-    answer:
-      "Yes. We guide first-time buyers through the decision-making process, helping them understand key considerations before making a purchase.",
-  },
-  {
-    question: "Do you guarantee investment returns?",
-    answer:
-      "No. We provide professional guidance to support informed decisions. Property values and investment performance depend on market conditions and other factors.",
-  },
-  {
-    question: "Can I book a consultation before making any decision?",
-    answer:
-      "Absolutely. Our consultation service is designed to help you evaluate your options before committing to a property transaction.",
-  },
-];
+import Link from "next/link";
 
-export default function FAQ() {
+export default function CTA() {
   return (
-    <section className="bg-slate-50 py-24">
-      <div className="max-w-4xl mx-auto px-6">
+    <section
+      id="consultation"
+      className="scroll-mt-28 py-24 bg-[#071A3D] text-white"
+    >
+      <div className="max-w-5xl mx-auto px-6 text-center">
 
-        <div className="text-center mb-16">
-          <span className="uppercase tracking-widest text-yellow-600 font-semibold">
-            FAQ
-          </span>
+        <h2 className="text-4xl md:text-5xl font-bold leading-tight">
+          Ready to Make Your Next Property Decision with Confidence?
+        </h2>
 
-          <h2 className="text-4xl font-bold mt-4">
-            Frequently Asked Questions
-          </h2>
-        </div>
+        <p className="mt-8 text-xl text-slate-300 leading-relaxed">
+          Whether you are buying, selling, investing, renting, leasing, or
+          seeking professional real estate guidance, KARBA Financial
+          Consultant Ltd is here to help you make informed decisions with
+          confidence.
+        </p>
 
-        <div className="space-y-6">
-          {faqs.map((faq) => (
-            <div
-              key={faq.question}
-              className="bg-white rounded-xl shadow p-6"
-            >
-              <h3 className="text-xl font-semibold text-slate-900">
-                {faq.question}
-              </h3>
+        <div className="mt-12 flex flex-wrap justify-center gap-6">
 
-              <p className="mt-3 text-slate-600 leading-7">
-                {faq.answer}
-              </p>
-            </div>
-          ))}
+          <Link
+            href="/book-consultation"
+            className="bg-[#D4AF37] text-[#071A3D] font-bold px-8 py-4 rounded-xl hover:bg-yellow-400 transition"
+          >
+            Book Consultation
+          </Link>
+
+          <a
+            href="https://wa.me/message/5RKGRI57IBIWG1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border border-white px-8 py-4 rounded-xl hover:bg-white hover:text-[#071A3D] transition"
+          >
+            Chat on WhatsApp
+          </a>
+
         </div>
 
       </div>

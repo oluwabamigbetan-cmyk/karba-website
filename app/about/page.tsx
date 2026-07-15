@@ -311,7 +311,7 @@ export default function AboutPage() {
 </p>
 
 <p className="mt-6 text-lg text-gray-600 leading-9">
-  For me, this is more than a profession—it is a responsibility. Every recommendation we make has the potential to influence someone's financial future, and I never take that responsibility lightly. That is why integrity, professionalism, and transparency remain the foundation of everything we do at KARBA.
+  For me, this is more than a profession; it is a responsibility. Every recommendation we make has the potential to influence someone's financial future, and I never take that responsibility lightly. That is why integrity, professionalism, and transparency remain the foundation of everything we do at KARBA.
 </p>
 
 <p className="mt-6 text-lg text-gray-600 leading-9">
@@ -341,7 +341,7 @@ export default function AboutPage() {
 </p>
 
 <p className="mt-6 text-lg text-gray-600 leading-9">
-  As Founder and Chief Executive Officer, I remain personally committed to the values upon which KARBA was established—<strong>professionalism, integrity, excellence, transparency, and client-focused service.</strong> These are not merely words displayed on our website; they are principles that shape every decision we make and every client relationship we build.
+  As Founder and Chief Executive Officer, I remain personally committed to the values upon which KARBA was established; <strong>professionalism, integrity, excellence, transparency, and client-focused service.</strong> These are not merely words displayed on our website; they are principles that shape every decision we make and every client relationship we build.
 </p>
 
 <p className="mt-6 text-lg text-gray-600 leading-9">

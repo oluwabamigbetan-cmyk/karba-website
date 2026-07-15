@@ -4,6 +4,7 @@ import RealEstateServices from "@/components/real-estate/Services";
 import Process from "@/components/real-estate/Process";
 import FAQ from "@/components/real-estate/FAQ";
 import CTA from "@/components/real-estate/CTA";
+import Disclaimer from "@/components/real-estate/Disclaimer";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -60,11 +61,12 @@ export default function RealEstatePage() {
   return (
     <main>
       <Hero />
-      <WhyKarba />
       <RealEstateServices />
+      <WhyKarba />
       <Process />
       <FAQ />
       <CTA />
+      <Disclaimer />
     </main>
   );
 }
