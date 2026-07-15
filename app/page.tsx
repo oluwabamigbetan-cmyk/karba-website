@@ -5,14 +5,10 @@ import Services from "@/components/home/Services";
 import WhyChooseKarba from "@/components/home/WhyChooseKarba";
 import HowWeWork from "@/components/home/HowWeWork";
 import Testimonials from "@/components/home/Testimonials";
-
-
-
-import Statistics from "@/components/home/Statistics";
-
 import Faq from "@/components/home/Faq";
 import KnowledgeCentre from "@/components/home/KnowledgeCentre";
 import CallToAction from "./sections/CallToAction";
+
 
 export default function HomePage() {
   return (
@@ -29,8 +25,6 @@ export default function HomePage() {
       <WhyChooseKarba />
 
       <HowWeWork />
-
-      <Statistics />
 
       <Testimonials />
 

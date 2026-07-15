@@ -282,36 +282,96 @@ export default function AboutPage() {
 
       <div>
 
-        <p className="uppercase tracking-widest text-[#D4AF37] font-bold">
-          Meet the Founder
-        </p>
-
         <h2 className="mt-4 text-4xl font-bold text-[#071A3D]">
-          Babatunde Bamigbetan
-        </h2>
+  A Message from the Founder
+</h2>
 
-        <p className="text-xl text-gray-500 mt-2">
-          Founder & Financial Consultant
-        </p>
+<p className="mt-4 text-xl text-[#D4AF37] font-semibold">
+  Building Financial Confidence, One Family and One Business at a Time
+</p>
 
-        <p className="mt-8 text-lg text-gray-600 leading-9">
-          KARBA Financial Consultant Ltd, is a financial consulting firm committed to helping individuals, families, and businesses make informed financial decisions with confidence.
-          Driven by a passion for financial empowerment and long-term wealth creation, KARBA was founded with a clear vision: to provide trusted, ethical, and personalized advisory services that enable clients to protect their assets, grow their wealth, and achieve lasting financial security.
-          Under my leadership, KARBA delivers professional advisory services in insurance, real estate, and financial planning, combining strategic insight with a client-first approach. I believe that every financial decision should be guided by knowledge, integrity, and careful planning, not uncertainty or guesswork.
-          My philosophy is simple: every client deserves honest advice, tailored solutions, and a trusted partner who is genuinely interested in their success. This commitment has shaped our reputation for professionalism, transparency, and excellence in service delivery.
-          Beyond providing financial solutions, i am dedicated to promoting financial literacy and empowering people to make sound decisions that create lasting value for themselves, their families, and future generations.
-          As KARBA continues to grow, our vision remains unchanged, to build one of Nigeria most trusted financial consulting firms, recognized for transforming lives through expert guidance, meaningful relationships, and unwavering integrity.
-        </p>
+<h3 className="mt-8 text-3xl font-bold text-[#071A3D]">
+  Babatunde Bamigbetan
+</h3>
 
-        <p className="mt-6 text-lg text-gray-600 leading-9">
-          “Success is not just about building wealth; it is about protecting it, growing it wisely, and creating a legacy that lasts.”  (Founder / CEO) Bamigbetan Babatunde
-        </p>
+<p className="text-xl text-gray-500 mt-2">
+  Founder, Chief Executive Officer & Lead Financial Consultant
+</p>
 
-      </div>
+<p className="mt-6 text-lg text-gray-600 leading-9">
+  Thank you for taking the time to visit our website.
+</p>
 
-    </div>
+<p className="mt-6 text-lg text-gray-600 leading-9">
+  I founded KARBA with one simple conviction: <strong>every individual, every family, and every business deserves honest, professional guidance before making financial decisions that shape their future.</strong> Financial decisions often have long-term consequences, and I believe they should never be made based on uncertainty, pressure, or incomplete information.
+</p>
 
-  </div>
+<p className="mt-6 text-lg text-gray-600 leading-9">
+  Throughout my journey in financial consulting, I have witnessed both the consequences of inadequate planning and the life-changing impact of informed financial decisions. I have seen families secure their future through proper protection, individuals build lasting wealth through disciplined planning, and businesses make confident decisions that support sustainable growth. Those experiences continue to strengthen my passion for helping people make informed choices with clarity and confidence.
+</p>
+
+<p className="mt-6 text-lg text-gray-600 leading-9">
+  For me, this is more than a profession—it is a responsibility. Every recommendation we make has the potential to influence someone's financial future, and I never take that responsibility lightly. That is why integrity, professionalism, and transparency remain the foundation of everything we do at KARBA.
+</p>
+
+<p className="mt-6 text-lg text-gray-600 leading-9">
+  At KARBA Financial Consultant Ltd, we believe financial consulting goes beyond recommending insurance solutions, facilitating property transactions, or discussing investment opportunities. It is about listening carefully, understanding your goals, earning your trust, and providing practical guidance that helps you protect what matters most, grow your wealth responsibly, and build a lasting legacy for yourself and future generations.
+</p>
+
+<p className="mt-6 text-lg text-gray-600 leading-9">
+  Our approach is guided by one simple principle:
+</p>
+
+<div className="my-10 border-l-4 border-[#D4AF37] bg-slate-50 p-6 rounded-r-xl">
+  <p className="text-xl italic font-semibold text-[#071A3D]">
+    “Will this truly help our client achieve their financial goals?”
+  </p>
+</div>
+
+<p className="mt-6 text-lg text-gray-600 leading-9">
+  Every consultation, every recommendation, and every relationship we build begins with that question. It reminds us that our responsibility is not simply to provide services, but to deliver value that genuinely improves the lives of the people we serve.
+</p>
+
+<p className="mt-6 text-lg text-gray-600 leading-9">
+  Whether you are planning for your family's future, protecting your income, preparing for retirement, investing in real estate, purchasing your first home, growing your wealth, or seeking strategic financial guidance for your business, my commitment is to ensure you receive advice that is objective, practical, and tailored to your unique circumstances.
+</p>
+
+<p className="mt-6 text-lg text-gray-600 leading-9">
+  At KARBA, we do not measure success solely by the number of consultations we conduct or the transactions we facilitate. We measure success by the confidence our clients gain, the trust they place in us, and the lasting relationships we build over time. There is no greater satisfaction than knowing we have helped someone make a decision that positively impacts their future and provides peace of mind.
+</p>
+
+<p className="mt-6 text-lg text-gray-600 leading-9">
+  As Founder and Chief Executive Officer, I remain personally committed to the values upon which KARBA was established—<strong>professionalism, integrity, excellence, transparency, and client-focused service.</strong> These are not merely words displayed on our website; they are principles that shape every decision we make and every client relationship we build.
+</p>
+
+<p className="mt-6 text-lg text-gray-600 leading-9">
+  Thank you once again for visiting KARBA Financial Consultant Ltd.
+</p>
+
+<p className="mt-6 text-lg text-gray-600 leading-9">
+  Whether you are taking your first step towards financial security or seeking experienced guidance to achieve your next milestone, it would be our privilege to partner with you. I warmly invite you to schedule a consultation, and I look forward to the opportunity to serve you with professionalism, integrity, and excellence.
+</p>
+
+<div className="mt-12">
+  <p className="font-semibold text-[#071A3D]">
+    Warm regards,
+  </p>
+
+  <h3 className="mt-6 text-2xl font-bold text-[#071A3D]">
+    Babatunde Bamigbetan
+  </h3>
+
+  <p className="mt-2 font-semibold text-[#D4AF37]">
+    KARBA Financial Consultant Ltd
+  </p>
+</div>
+
+      </div> {/* End Right Column */}
+
+    </div> {/* End Grid */}
+
+  </div> {/* End Container */}
+
 </section>
 
 {/* CTA */}
@@ -349,6 +409,7 @@ export default function AboutPage() {
 
   </div>
 </section>
-</>
+
+    </>
   );
 }

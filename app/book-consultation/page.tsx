@@ -1,4 +1,5 @@
 import ConsultationForm from "@/components/consultation/ConsultationForm";
+import FAQ from "@/components/consultation/FAQ";
 
 export const metadata = {
   title: "Book Consultation | KARBA Financial Consultant Ltd",
@@ -52,10 +53,17 @@ export default function BookConsultationPage() {
             consultants will review your request and contact you within
             one business day.
           </p>
+          <p className="mt-6 text-sm text-center text-gray-500 leading-7">
+  Your privacy matters to us. All information you provide will be treated
+  with strict confidentiality and used solely for the purpose of responding
+  to your enquiry and providing professional advisory services.
+</p>
 
         </div>
 
       </section>
+
+      <FAQ />
 
       {/* Consultation Form */}
 
